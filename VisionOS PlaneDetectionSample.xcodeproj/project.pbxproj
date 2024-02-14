@@ -14,6 +14,7 @@
 		1A5F5BE52B7CB856008DFB3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5F5BE42B7CB856008DFB3C /* Assets.xcassets */; };
 		1A5F5BE82B7CB856008DFB3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5F5BE72B7CB856008DFB3C /* Preview Assets.xcassets */; };
 		1A5F5BF32B7CB856008DFB3C /* VisionOS_PlaneDetectionSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F5BF22B7CB856008DFB3C /* VisionOS_PlaneDetectionSampleTests.swift */; };
+		1A5F5BFD2B7CB8E8008DFB3C /* PlaneDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F5BFC2B7CB8E8008DFB3C /* PlaneDetectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		1A5F5BE92B7CB856008DFB3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A5F5BEE2B7CB856008DFB3C /* VisionOS PlaneDetectionSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VisionOS PlaneDetectionSampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5F5BF22B7CB856008DFB3C /* VisionOS_PlaneDetectionSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOS_PlaneDetectionSampleTests.swift; sourceTree = "<group>"; };
+		1A5F5BFC2B7CB8E8008DFB3C /* PlaneDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				1A5F5BDE2B7CB855008DFB3C /* VisionOS_PlaneDetectionSampleApp.swift */,
 				1A5F5BE02B7CB855008DFB3C /* ContentView.swift */,
 				1A5F5BE22B7CB855008DFB3C /* ImmersiveView.swift */,
+				1A5F5BFC2B7CB8E8008DFB3C /* PlaneDetectionView.swift */,
 				1A5F5BE42B7CB856008DFB3C /* Assets.xcassets */,
 				1A5F5BE92B7CB856008DFB3C /* Info.plist */,
 				1A5F5BE62B7CB856008DFB3C /* Preview Content */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A5F5BE12B7CB855008DFB3C /* ContentView.swift in Sources */,
+				1A5F5BFD2B7CB8E8008DFB3C /* PlaneDetectionView.swift in Sources */,
 				1A5F5BDF2B7CB855008DFB3C /* VisionOS_PlaneDetectionSampleApp.swift in Sources */,
 				1A5F5BE32B7CB855008DFB3C /* ImmersiveView.swift in Sources */,
 			);

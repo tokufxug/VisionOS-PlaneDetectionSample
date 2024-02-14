@@ -14,8 +14,8 @@ struct VisionOS_PlaneDetectionSampleApp: App {
             ContentView()
         }
 
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
+        ImmersiveSpace(id: "PlaneDetection") {
+            PlaneDetectionView()
         }
     }
 }

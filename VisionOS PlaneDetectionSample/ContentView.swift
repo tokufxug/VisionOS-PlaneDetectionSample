@@ -24,7 +24,7 @@ struct ContentView: View {
 
             Text("Hello, world!")
 
-            Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
+            Toggle("Plane Detection", isOn: $showImmersiveSpace)
                 .toggleStyle(.button)
                 .padding(.top, 50)
         }
@@ -32,7 +32,7 @@ struct ContentView: View {
         .onChange(of: showImmersiveSpace) { _, newValue in
             Task {
                 if newValue {
-                    switch await openImmersiveSpace(id: "ImmersiveSpace") {
+                    switch await openImmersiveSpace(id: "PlaneDetection") {
                     case .opened:
                         immersiveSpaceIsShown = true
                     case .error, .userCancelled:
