@@ -32,9 +32,6 @@ struct PlaneDetectionView: View {
         Task {
             try await session.run([planeData])
             for await update in planeData.anchorUpdates {
-                if update.anchor.classification == .window {
-                    continue
-                }
                 switch update.event {
                 case .added, .updated:
                     await updatePlane(update.anchor)
@@ -59,6 +56,7 @@ struct PlaneDetectionView: View {
             planeEntity.addChild(planeText)
             
             entity.addChild(planeEntity)
+            planeAnchors[anchor.id] = anchor
             entityMap[anchor.id] = entity
             rootEntity.addChild(entity)
         }
@@ -74,7 +72,7 @@ struct PlaneDetectionView: View {
     
     func placeColor(classification: PlaneAnchor.Classification) -> UIColor {
         switch(classification) {
-            case .wall:
+        case .wall:
             return .red
         case .notAvailable:
             return .clear
@@ -91,7 +89,7 @@ struct PlaneDetectionView: View {
         case .seat:
             return .orange
         case .window:
-            return .darkGray
+            return .purple
         case .door:
             return .green
         @unknown default:
